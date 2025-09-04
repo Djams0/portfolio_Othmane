@@ -9,3 +9,20 @@
     text-decoration: none;
     outline: none;
 }
+
+:root{
+    --secondary-color: #2565ae;
+    --text-color: #ffffff;
+    --bg-color: #000000;
+    --main-color: #12345c;;
+}
+
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
