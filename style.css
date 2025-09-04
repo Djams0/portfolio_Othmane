@@ -1,33 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');*
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-    border: none;
-    text-decoration: none;
-    outline: none;
 }
 
-:root{
+:root {
     --secondary-color: #2565ae;
     --text-color: #ffffff;
     --bg-color: #000000;
-    --main-color: #12345c;;
+    --main-color: #12345c;
 }
 
 html {
     font-size: 62.5%;
-    overflow: hidden;
 }
 
-body{
+body {
     background: var(--bg-color);
     color: var(--text-color);
 }
 
-.header{
+/* ---------- HEADER ---------- */
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -36,50 +34,131 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: blueviolet;
+    background: linear-gradient(90deg, var(--main-color), blueviolet);
     z-index: 100;
 }
 
-.logo{
+.logo {
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
 }
 
-.header nav a{
+.header nav a {
     font-size: 1.6rem;
     color: var(--text-color);
     margin-left: 3rem;
     font-weight: 500;
+    transition: .3s;
 }
 
-section{
+.header nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* ---------- SECTION ---------- */
+section {
     padding: 10rem 9% 2rem;
     min-height: 100vh;
 }
 
-.home{
+.home {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 9%;
 }
 
-.home-content{
-max-width: 60rem;
+/* Texte gauche */
+.home-content {
+    max-width: 60rem;
 }
 
-.home-content h1{
+.home-content h1 {
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.3;
 }
 
-.btn-box{
-    position: relative;
-    display: inline-flex;
+.home-content h3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0;
+}
+
+/* Boutons */
+.btn-box {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.btn-box a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    background: var(--main-color);
+    color: var(--text-color);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-box a:hover {
+    background: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+/* Réseaux sociaux */
+.home-sci {
+    position: absolute;
+    bottom: 4rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.home-sci a {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 16rem;
-    height: 100%;
+    color: var(--main-color);
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.home-sci a:hover {
     background: var(--main-color);
+    color: var(--text-color);
+    box-shadow: 0 0 10px var(--main-color), 0 0 30px var(--main-color);
+}
+
+/* Photo de profil */
+.home-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 5px solid var(--main-color);
+    object-fit: cover;
+    box-shadow: 0 0 20px var(--main-color);
+    transition: 0.4s;
+}
+
+.home-img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px var(--secondary-color);
 }
