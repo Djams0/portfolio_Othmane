@@ -1,50 +1,343 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio Othmane</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
+  <!-- Header -->
   <header class="header">
-    <a href="#" class="logo">Othmane.</a>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
+    <a href="#home" class="logo">Othmane.</a>
+    <nav class="nav">
+      <a href="#home" class="active">Accueil</a>
+      <a href="#about">A propos</a>
       <a href="#education">Education</a>
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </nav>
+    <button class="menu-toggle" aria-label="Menu">
+      <i class='bx bx-menu'></i>
+    </button>
   </header>
 
   <main>
+    <!-- HOME -->
     <section class="home" id="home">
       <div class="home-content">
-        <h3>Hello, I'm</h3>
-        <h1>Othmane</h1>
-        <h3>And I'm a <span class="typing"></span></h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        <h3>Bonjour, je suis</h3>
+        <h1>Othmane Bardag</h1>
+        <h3>Et je suis <span class="typing"></span></h3>
+        <p>
+          Manager de la communication marketing intégrée, passionné par l’acquisition, la création
+          de contenus engageants et l’optimisation des performances (KPI, ROI, conversion).
+        </p>
+
+        <div class="kpi">
+          <div class="kpi-card">
+            <span class="kpi-value">+20%</span>
+            <span class="kpi-label">Taux d’engagement</span>
+          </div>
+          <div class="kpi-card">
+            <span class="kpi-value">+10%</span>
+            <span class="kpi-label">Rétention client</span>
+          </div>
+          <div class="kpi-card">
+            <span class="kpi-value">3+</span>
+            <span class="kpi-label">Années en digital</span>
+          </div>
+        </div>
 
         <div class="btn-box">
-          <a href="#">Hire Me</a>
-          <a href="#">Download CV</a>
+          <a href="#contact" class="btn primary">Me recruter</a>
+          <a href="assets/livret CV Othmane.pdf" class="btn ghost" download>Télécharger CV</a>
+          <a href="assets/livret d'employabilitee OTHMANE BARDAG.pdf" class="btn ghost" download>Télécharger Levret</a>
         </div>
 
         <div class="home-sci">
-          <a href="#"><i class='bx bxl-facebook'></i></a>
-          <a href="#"><i class='bx bxl-instagram'></i></a>
-          <a href="#"><i class='bx bxl-linkedin'></i></a>
-          <a href="#"><i class='bx bxl-github'></i></a>
+          <!--<a href="https://facebook.com/" target="_blank" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>-->
+          <!--<a href="https://instagram.com/" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>-->
+          <a href="https://www.linkedin.com/in/othmane-bardag" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+          <!--<a href="https://github.com/" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>-->
         </div>
       </div>
 
       <div class="home-img">
-        <img src="https://imgv3.fotor.com/images/blog-cover-image/10-profile-picture-ideas-to-make-you-stand-out.jpg" alt="Photo de profil Othmane">
+        <img src="image/img_profil.jpg" alt="Photo de profil Othmane" />
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="section-head">
+        <h2>À propos</h2>
+        <p>Créatif, pragmatique et orienté résultats.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Profil</h3>
+          <p>
+            J’aide les marques à capter, convertir et fidéliser via des contenus engageants et des campagnes performantes
+            (Meta/Google/TikTok). Je combine créativité, pilotage de projet et analyse de données (GA, Meta Insights).
+          </p>
+          <ul class="tags">
+            <li>Stratégie de contenu</li>
+            <li>Acquisition</li>
+            <li>Fidélisation</li>
+            <li>Analytics</li>
+            <li>RSE / éco-conception</li>
+          </ul>
+        </div>
+
+        <div class="about-card">
+          <h3>Compétences clés</h3>
+          <ul class="skills">
+            <li><span>Meta Ads / Google Ads</span><span class="bar"><em style="width: 88%"></em></span></li>
+            <li><span>Social Media (IG/TikTok/FB/LI)</span><span class="bar"><em style="width: 90%"></em></span></li>
+            <li><span>SEO/SEA</span><span class="bar"><em style="width: 75%"></em></span></li>
+            <li><span>Analytics (GA4 / KPI)</span><span class="bar"><em style="width: 78%"></em></span></li>
+            <li><span>Design (Canva/Adobe/Fimora)</span><span class="bar"><em style="width: 82%"></em></span></li>
+            <li><span>Front (HTML/CSS)</span><span class="bar"><em style="width: 60%"></em></span></li>
+          </ul>
+          <small class="muted">* notions / initiation certifiée</small>
+        </div>
+
+        <div class="about-card">
+          <h3>Soft skills & langues</h3>
+          <ul class="soft">
+            <li>Dynamique & ambitieux</li>
+            <li>Rigoureux & curieux</li>
+            <li>Communication & esprit d’équipe</li>
+            <li>Gestion du temps & priorisation</li>
+          </ul>
+          <ul class="langs">
+            <li>Français : C1</li>
+            <li>Anglais : C1</li>
+            <li>Arabe : Bilingue</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="about-cta">
+        <a class="btn primary" href="#services">Voir mes services</a>
+        <a class="btn ghost" href="#education">Mon parcours</a>
+      </div>
+    </section>
+
+    <!-- EDUCATION (+ EXPERIENCE TIMELINE) -->
+    <section class="education" id="education">
+      <div class="section-head">
+        <h2>Parcours</h2>
+        <p>Formations & expériences significatives.</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Experience -->
+        <div class="tl-group">
+          <h3>Expériences</h3>
+
+          <article class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <h4>Responsable Marketing Digital (Alternance) — Domino’s Pizza (VELSA)</h4>
+              <span class="tl-meta">Déc. 2024 — Sept. 2025 · Paris</span>
+              <ul>
+                <li>Contenus & animation social media (FB, IG, TikTok) : <b>+20 %</b> d’engagement en 3 mois.</li>
+                <li>Programme de fidélité digital : <b>+10 %</b> de rétention.</li>
+                <li>Conception & gestion de campagnes Meta Ads.</li>
+              </ul>
+              <div class="stack">
+                <span>Meta Ads</span><span>Content</span><span>Fidélisation</span><span>Analytics</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <h4>Chargé de communication digitale (Stage) — Executif School of Paris</h4>
+              <span class="tl-meta">Mars 2024 — Juin 2024 · Paris</span>
+              <ul>
+                <li>Stratégies de communication en ligne, valorisation de l’école.</li>
+                <li>Gestion & animation des réseaux sociaux, organisation d’événements.</li>
+                <li>Reporting & recommandations à partir des données.</li>
+              </ul>
+              <div class="stack">
+                <span>Social Media</span><span>Événementiel</span><span>Reporting</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <h4>Stagiaire Marketing Digital — Visiativ Africa</h4>
+              <span class="tl-meta">Avril 2023 — Août 2023 · Maroc</span>
+              <ul>
+                <li>Création de contenus, planification & mise en œuvre de campagnes.</li>
+                <li>Analyse des performances & veille concurrentielle.</li>
+              </ul>
+              <div class="stack">
+                <span>Content</span><span>Campagnes</span><span>Analyse</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <h4>Chargé de clientèle / Opérateur téléphonique — INWI</h4>
+              <span class="tl-meta">Sept. 2022 — Déc. 2022 · Maroc</span>
+              <ul>
+                <li>Responsable d’agence, encaissements, suivi des stocks.</li>
+                <li>Ventes : abonnements, ADSL, fibre.</li>
+              </ul>
+              <div class="stack">
+                <span>Vente</span><span>Relation client</span><span>Retail</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Education -->
+        <div class="tl-group">
+          <h3>Formations</h3>
+
+          <article class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <h4>Manager de la communication marketing intégrée (Bac+5)</h4>
+              <span class="tl-meta">2025 — Yellowe, France</span>
+              <p>Spécialisation stratégie intégrée, acquisition & pilotage de projet.</p>
+            </div>
+          </article>
+
+          <article class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <h4>Master 1 Marketing & Communication</h4>
+              <span class="tl-meta">2024 — Executif School of Paris</span>
+            </div>
+          </article>
+
+          <article class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <h4>Licence Fondamentale – Option Gestion (PFE : Grand livre du marketing digital)</h4>
+              <span class="tl-meta">2022 — Université Hassan II, Maroc</span>
+            </div>
+          </article>
+
+          <article class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <h4>Baccalauréat — Option Physique-Chimie</h4>
+              <span class="tl-meta">2018 — Lycée Ibnou El Yassamine, Maroc</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="section-head">
+        <h2>Services</h2>
+        <p>Ce que je peux faire pour vous.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <i class='bx bxs-megaphone'></i>
+          <h3>Social Media Management</h3>
+          <p>Calendrier éditorial, animation & modération (IG, TikTok, FB, LI). Contenus engageants orientés KPI.</p>
+          <ul class="bullets">
+            <li>Brand voice & guidelines</li>
+            <li>UGC & vidéos courtes</li>
+            <li>Modération & CRM social</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <i class='bx bxl-meta'></i>
+          <h3>Publicité digitale</h3>
+          <p>Campagnes Meta & Google : ciblage, A/B test, optimisation budget, conversion & rétention.</p>
+          <ul class="bullets">
+            <li>Meta Ads / Google Ads</li>
+            <li>Retargeting</li>
+            <li>Tracking & pixels</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <i class='bx bxs-edit'></i>
+          <h3>Content & Design</h3>
+          <p>Visuels, carrousels, vidéos (Canva, Filmora, Adobe). Landing pages (WordPress/Shopify).</p>
+          <ul class="bullets">
+            <li>Copy orienté conversion</li>
+            <li>Short-form vidéo</li>
+            <li>Templates & systèmes</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <i class='bx bxs-doughnut-chart'></i>
+          <h3>Analytics & Reporting</h3>
+          <p>Tableaux de bord KPI (GA4, Meta Insights). Reco data-driven & itérations.</p>
+          <ul class="bullets">
+            <li>GA4 / Looker Studio*</li>
+            <li>Attribution & cohortes*</li>
+            <li>ROI & ROAS</li>
+          </ul>
+          <small class="muted">* axe d’amélioration en cours</small>
+        </article>
+
+        <article class="card">
+          <i class='bx bx-git-branch'></i>
+          <h3>Automation Marketing</h3>
+          <p>Workflows d’emailing (Mailchimp/Sendinblue/HubSpot), nurturing & scoring.</p>
+          <ul class="bullets">
+            <li>Segmentation</li>
+            <li>Scénarios déclenchés</li>
+            <li>Templates responsive</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p>Parlons de votre projet.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Coordonnées</h3>
+          <ul class="contact-list">
+            <li><i class='bx bx-map'></i> Paris, Île-de-France</li>
+            <li><i class='bx bx-mail-send'></i> <a href="mailto:othmanebardag2000@gmail.com">othmanebardag2000@gmail.com</a></li>
+            <li><i class='bx bx-phone'></i> <a href="tel:+33768986699">+33 7 68 98 66 99</a></li>
+            <li><i class='bx bxl-linkedin-square'></i> <a href="https://www.linkedin.com/in/othmane-bardag" target="_blank">linkedin.com/in/othmane-bardag</a></li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
+
+    <footer class="footer">
+    <p>© <span id="year"></span> | Conçu et développé par 
+        <a href="mailto:mansourdjamil14@gmail.com">Mansour Djamil</a>
+    </p>
+    <p>Tous droits réservés</p>
+    </footer>
 
   <script src="style.js"></script>
 </body>
